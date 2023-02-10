@@ -12,8 +12,10 @@
     <title>Modal content</title>
 </head>
 <body>
-
+    
     <header class="hero">
+        <!--confirmacion-->
+    <h3 id="confirmacion" class="confirmacion-oculta">Tu correo se registro correctamente</h3>
         <div class="banner">
             <h1>modal project</h1>
             <button class="btn modal-btn">
@@ -25,12 +27,18 @@
     <!--Modal-->
     <div class="modal-overlay">
         <div class="modal-container">
-            <h3>MODAL CONTENT</h3>
+            <h3>Realiza tu viaje con nosotros</h3>
+            <p>Ingresa tu correo para recibir mas info</p>
+            <input type="email" id="email">
+            <button id="enviarBtn" class="btn modal-btn">Enviar</button>
             <button class="close-btn">
                 <i class="fas fa-times"></i>
             </button>
         </div>
     </div>
+
+
+    
     <script src="app.js"></script>
 </body>
 </html>

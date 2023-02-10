@@ -6,6 +6,10 @@
 const  modalBtn=document.querySelector('.modal-btn')
 const modal=document.querySelector('.modal-overlay')
 const closeBtn=document.querySelector('.close-btn')
+const emailInput=document.getElementById('email')
+const enviarBtn=document.getElementById('enviarBtn')
+
+
 
 
 modalBtn.addEventListener('click',()=>{
@@ -17,7 +21,15 @@ closeBtn.addEventListener('click',()=>{
     modal.classList.remove('open-modal')
 })
 
+enviarBtn.addEventListener('click',()=>{
+    const email=emailInput.value
+    const confirmacion=document.getElementById('confirmacion')
 
+    confirmacion.classList.remove('confirmacion-oculta')
+    confirmacion?.classList.add('confirmacion')
+    
+    console.log(email)
+})
 
 
 
